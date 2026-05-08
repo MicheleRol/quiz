@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friendship Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section id="loginView" class="panel login-panel">
+      <h1>Quizziamo tutti insieme fratelli!</h1>
+      <p class="intro">
+        Scegli il tuo nome e compila il questionario per gli altri.
+      </p>
+
+      <div class="dropdown">
+        <div class="selected" id="selected">Seleziona il tuo nome</div>
+        <div class="options hidden" id="options"></div>
+      </div>
+
+      <button id="startBtn" class="primary-btn" type="button">Entra</button>
+    </section>
+
+    <section id="communityView" class="hidden dashboard">
+      <header class="dashboard-header">
+        <div>
+          <h2 id="title">Ciao</h2>
+          <p class="intro small">Tocca una persona per <strong>iniziare</strong> o <strong>modificare</strong> il quiz.</p>
+        </div>
+        <div class="header-actions">
+          <button id="changeUserBtn" class="ghost-btn" type="button">Cambia nome</button>
+          <button id="resetScoresBtn" class="ghost-btn danger-btn hidden" type="button">Azzera</button>
+        </div>
+      </header>
+
+      <div class="stats-grid">
+        <article class="stat">
+          <span id="completedCount">0</span>
+          <p><strong>Questionari</strong> completati</p>
+        </article>
+        <article class="stat">
+          <span id="averageScore">0</span>
+          <p><strong>Media</strong> dei tuoi punteggi</p>
+        </article>
+        <article class="stat">
+          <span id="bestPair">-</span>
+          <p><strong>Coppia</strong> piu forte</p>
+        </article>
+      </div>
+
+      <nav class="tabs" aria-label="Sezioni">
+        <button class="tab active" type="button" data-view="peopleView">Questionari</button>
+        <button class="tab" type="button" data-view="pairsView">Punteggi coppia</button>
+      </nav>
+
+      <section id="peopleView" class="view">
+        <div id="userList" class="user-list"></div>
+      </section>
+
+      <section id="pairsView" class="view hidden">
+        <div id="pairList" class="pair-list"></div>
+      </section>
+    </section>
+
+    <section id="quizView" class="hidden panel quiz-panel">
+      <button id="backBtn" class="ghost-btn" type="button">Indietro</button>
+      <h2 id="quizTitle"></h2>
+      <form id="quizForm" class="quiz-form"></form>
+      <button id="saveQuizBtn" class="primary-btn" type="button">Salva punteggio</button>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js"></script>
+</body>
+</html>
