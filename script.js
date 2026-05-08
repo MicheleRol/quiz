@@ -20,90 +20,87 @@ const people = [
 
 const questions = [
   {
-    text: "Quanto ti senti a tuo agio a parlare con questa persona?",
+    text: "Da quanti anni vi conoscete?",
     answers: [
-      { label: "Poco", value: 1 },
-      { label: "Abbastanza", value: 2 },
-      { label: "Molto", value: 3 },
-      { label: "Completamente", value: 4 }
+      { label: "< 1 anno", value: 1 },
+      { label: "2-4 anni", value: 2 },
+      { label: "5-7 anni", value: 3 },
+      { label: "> 7 anni", value: 4 }
     ]
   },
   {
-    text: "Quanto ti fideresti di questa persona in un momento importante?",
+    text: "Quante volte alla settimana *fuori da scout( vi vedete?",
     answers: [
-      { label: "Poco", value: 1 },
-      { label: "Abbastanza", value: 2 },
-      { label: "Tanto", value: 3 },
-      { label: "A occhi chiusi", value: 4 }
+      { label: "Mai", value: 1 },
+      { label: "1-3 volte a settimana", value: 3 },
+      { label: "4-5 volte a settimana", value: 6 },
+      { label: "> 6 volte a settimana", value: 4 }
     ]
   },
   {
-    text: "Quanto vi divertite quando state insieme?",
+    text: "Sai dove abita?",
     answers: [
-      { label: "Raramente", value: 1 },
-      { label: "A volte", value: 2 },
-      { label: "Spesso", value: 3 },
-      { label: "Sempre", value: 4 }
+      { label: "Non saprei", value: 1 },
+      { label: "Conosco il quartiere in cui vive", value: 3 },
+      { label: "Si, so dove si trova precisamente", value: 6 }
     ]
   },
   {
-    text: "Quanto ti senti ascoltato da questa persona?",
+    text: "Conosci i nomi dei genitori?",
     answers: [
-      { label: "Poco", value: 1 },
-      { label: "Abbastanza", value: 2 },
-      { label: "Molto", value: 4 }
+      { label: "Non saprei", value: 2 },
+      { label: "Solo uno dei due", value: 5 },
+      { label: "Entrambi", value: 8 }
     ]
   },
   {
-    text: "Quanto vorresti fare attivita o squadra con questa persona?",
+    text: "Quanto ti pesa parlare con l'altro durante la strada?",
     answers: [
-      { label: "Poco", value: 1 },
-      { label: "Abbastanza", value: 2 },
-      { label: "Volentieri", value: 3 },
-      { label: "Sicuramente", value: 4 }
+      { label: "Parlerei solo con lui", value: 17 },
+      { label: "Mi interessa e ci provo", value: 8 },
+      { label: "Se capita è ok", value: 4 },
+      { label: "Non mi interessa, lo schivo", value: 1 }
     ]
   },
   {
-    text: "Quanto questa persona ti mette di buon umore?",
+    text: "Ti trovi in TRIPPIA con l'altra persona, come ti senti?",
     answers: [
-      { label: "Poco", value: 1 },
-      { label: "Abbastanza", value: 2 },
-      { label: "Molto", value: 3 },
-      { label: "Tantissimo", value: 4 }
+      { label: "Molto contento", value: 12 },
+      { label: "Indifferente", value: 8 },
+      { label: "Starei meglio con qualcun altro", value: 5 }
     ]
   },
   {
-    text: "Quanto vi capite anche senza parlare troppo?",
+    text: "Siete produttivi insieme in PATTUGLIA?",
     answers: [
-      { label: "Poco", value: 1 },
-      { label: "A volte", value: 2 },
-      { label: "Spesso", value: 4 }
+      { label: "Molto", value: 7 },
+      { label: "Tendiamo a distrarci", value: 5 },
+      { label: "Simao inconcludenti", value: 3 }
     ]
   },
   {
-    text: "Quanto ti viene naturale cercare questa persona nel gruppo?",
+    text: "Quanto ti fidi di questa persona?",
     answers: [
-      { label: "Raramente", value: 1 },
-      { label: "Ogni tanto", value: 2 },
-      { label: "Spesso", value: 3 },
-      { label: "Sempre", value: 4 }
+      { label: "Gli racconto tutto di me", value: 14 },
+      { label: "Non riesco a confidarmi ma ci parlo spesso", value: 10 },
+      { label: "Mi ispira fiducia ma non ci parlo di me", value: 7 },
+      { label: "Non ci parlo di cose esterne allo scoutismo", value: 4 }
     ]
   },
   {
-    text: "Quanto pensi che questa persona sappia rispettarti?",
+    text: "...scrive sul gruppo di clan chiedendo un favore:",
     answers: [
-      { label: "Poco", value: 1 },
-      { label: "Abbastanza", value: 2 },
-      { label: "Molto", value: 4 }
+      { label: "Non ri spondo, tanto qualcuno lo farà", value: 3 },
+      { label: "Rispondo nel gruppo", value: 7 },
+      { label: "Rispondo ma in chat privata", value: 10 }
     ]
   },
   {
-    text: "Quanto sarebbe bello condividere un'esperienza importante con questa persona?",
+    text: "Ci andresti a mangiare una pizza (solo voi due)?",
     answers: [
-      { label: "Poco", value: 1 },
-      { label: "Abbastanza", value: 2 },
-      { label: "Molto", value: 3 },
-      { label: "Bellissimo", value: 4 }
+      { label: "Si, certo", value: 12 },
+      { label: "Si se mi viene proposto", value: 6 },
+      { label: "No, non mi interessa", value: 2 }
     ]
   }
 ];
