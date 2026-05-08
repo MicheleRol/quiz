@@ -29,7 +29,7 @@ const questions = [
     ]
   },
   {
-    text: "Quante volte alla settimana *fuori da scout( vi vedete?",
+    text: "Quante volte alla settimana (fuori da scout) vi vedete?",
     answers: [
       { label: "Mai", value: 1 },
       { label: "1-3 volte a settimana", value: 3 },
